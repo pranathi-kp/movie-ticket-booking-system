@@ -1,23 +1,23 @@
-# Movie Ticket Booking System - Backend
+# Movie Ticket Booking System - Frontend
 
-This is the backend server for the Movie Ticket Booking System. It provides RESTful API endpoints for managing movies, bookings, and user authentication. The backend is built using Node.js, Express, Sequelize ORM, and MySQL.
+This is the frontend of the Movie Ticket Booking System, built using React, TypeScript, and Tailwind CSS. The frontend provides a user interface for browsing movies, selecting seats, and booking tickets.
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
+- [Available Scripts](#available-scripts)
+- [Future Enhancements](#future-enhancements)
 
 ## Technologies Used
-- **Node.js**: JavaScript runtime
-- **Express**: Web framework for Node.js
-- **Sequelize**: ORM for SQL databases
-- **MySQL**: Relational database
-- **JWT**: JSON Web Token for authentication
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: JavaScript with static typing
+- **Tailwind CSS**: Utility-first CSS framework
+- **Redux**: State management library
+- **React Router**: Client-side routing
 
 ## Project Structure
-
 
 ```
 frontend/
@@ -61,61 +61,36 @@ frontend/
 └── tsconfig.json                  # TypeScript configuration
 ```
 
+
 ## Installation
 
-1. Clone the repository and navigate to the `backend` directory:
+1. Navigate to the `frontend` directory:
     ```bash
-    cd backend
+    cd frontend
     ```
 2. Install the dependencies:
     ```bash
     npm install
     ```
-3. Configure your SQL database in the `.env` file:
-    ```env
-    DB_NAME=movie_booking
-    DB_USER=root
-    DB_PASS=password
-    DB_HOST=localhost
-    PORT=5000
-    JWT_SECRET=supersecretkey
+3. Start the development server:
+    ```bash
+    npm start
     ```
-4. Run the migrations to set up the database schema:
-    ```bash
-    npx sequelize db:migrate
-    ```
-5. Seed the database with initial data:
-    ```bash
-    npx sequelize-cli db:seed:undo --seed 20240927160144-seed-movies
-    ```
-    ```bash
-    npx sequelize-cli db:seed --seed 20240927161214-seed-showtimes
-    ```
-    ```bash
-    npx sequelize-cli db:seed 20240927165034-seed-seats
-    ```bash
-6. Start the development server:
-    ```bash
-    npm run dev
-    ```
+4. Open your browser and navigate to `http://localhost:3000`.
 
 ## Usage
-- The backend serves as the API server for the Movie Ticket Booking System.
-- It handles requests from the frontend and interacts with the MySQL database.
+- **Home Page**: Provides an overview and navigation to other sections of the app.
+- **Movies Page**: Lists all available movies with options to view more details.
+- **Seat Selection**: Allows users to select seats for a movie and proceed to booking.
+- **Booking History**: Displays the user's booking history.
+- **Admin Panel**: Provides an interface for admins to manage movies and showtimes.
 
-## API Endpoints
-- **`/api/auth`**
-  - POST `/login`: Login for users and admins.
-  - POST `/signup`: Signup for users and admins.
-- **`/api/movies`**
-  - GET `/`: Retrieve all movies.
-  - GET `/search`: search and filter movies.
-  - GET `/:id`: Retrive movie details by id.
-  - GET `/showtimes/:movieId`: Get all showtimes of movie by movie Id.
-  - GET `/:movieId/showtimes/:showtimeId/seats`: Find seats for a particular showtime.
-  - POST `/`: Create a new movie (Admin only).
-  - PUT `/:id`: Update an existing movie (Admin only).
-  - DELETE `/:id`: Delete a movie (Admin only).
-- **`/api/bookings`**
-  - POST `/`: Create a new booking.
-  - GET `/history`: Retrieve booking history for a user.
+## Available Scripts
+- **`npm start`**: Runs the app in development mode.
+- **`npm run build`**: Builds the app for production.
+- **`npm test`**: Launches the test runner.
+
+## Future Enhancements
+- **Additional Filters**: Adding filters for movie genres, release dates, etc.
+- **Enhanced UI**: Implementing animations and transitions for better user experience.
+- **Offline Mode**: Enable offline access with service workers.
