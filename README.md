@@ -86,4 +86,3 @@ movie-ticket-booking-system/
 ## Future Enhancements
 - **Additional Filters**: Add more filters to movie listings..
 - **Analytics**: Implement advanced analytics and reporting for admins.
-- **Analytics**: Implement advanced analytics and reporting for admins.
