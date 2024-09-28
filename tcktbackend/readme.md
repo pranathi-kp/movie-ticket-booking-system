@@ -80,7 +80,7 @@ backend/                       # Backend folder (Node.js, Sequelize, JWT, MySQL)
     ```
     ```bash
     npx sequelize-cli db:seed 20240927165034-seed-seats
-    ```bash
+    ```
 6. Start the development server:
     ```bash
     npm run dev
