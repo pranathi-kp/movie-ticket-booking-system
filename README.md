@@ -48,9 +48,7 @@ movie-ticket-booking-system/
    npm install
    ```
 3. Configure your SQL database in the .env file.
-   ```bash
-   Configure your SQL database in the .env file.
-   ```
+  
 4.Run the migrations:
   ```bash
   npx sequelize db:migrate
