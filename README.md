@@ -33,7 +33,6 @@ movie-ticket-booking-system/
 ├── backend/ # Backend code (API server)
 ├── frontend/ # Frontend code (React app)
 ├── README.md # Main project README
-└── .gitignore # Ignore
 ```
 
 ## Installation
