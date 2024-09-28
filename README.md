@@ -1,6 +1,8 @@
 # Movie Ticket Booking System
 
 This is a full-stack Movie Ticket Booking System that allows users to browse movies, select seats, and book tickets. The system includes an admin panel for managing movies and showtimes. The project is divided into two main parts: the **Backend** (API server) and the **Frontend** (User Interface).
+### Backend
+- find detailed readme files in respective folders
 
 ## Table of Contents
 - [Features](#features)
