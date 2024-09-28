@@ -20,33 +20,33 @@ This is the backend server for the Movie Ticket Booking System. It provides REST
 
 
 ```
-├── backend/                       # Backend folder (Node.js, Sequelize, JWT, MySQL)
-│   ├── config/                    # Configuration files (database, environment variables)
-│   │   └── db.js                  # Database connection configuration
-│   ├── controllers/               # Controller logic (business logic for each API endpoint)
-│   │   ├── authController.js      # Signup, login, JWT token management
-│   │   ├── bookingController.js   # Manage bookings, seat selection, payments
-│   │   └── movieController.js     # CRUD operations for movies, admin routes
-│   ├── models/                    # Sequelize models (database schemas)
-│   │   ├── User.js                # User model (admin, customers)
-│   │   ├── Movie.js               # Movie model
-│   │   ├── Booking.js             # Booking model
-│   │   └── Seat.js                # Seat model
-│   ├── routes/                    # Routes for each API (maps HTTP methods to controller functions)
-│   │   ├── authRoutes.js          # Routes for user authentication (signup, login)
-│   │   ├── movieRoutes.js         # Routes for movie operations
-│   │   └── bookingRoutes.js       # Routes for seat booking operations
-│   ├── middleware/                # Middleware (authentication, error handling)
-│   │   └── authMiddleware.js      # JWT authentication and authorization
-│   ├── utils/                     # Helper utilities (e.g., JWT generation, password hashing)
-│   │   ├── jwt.js                 # JWT token generation/verification
-│   │   └── bcrypt.js              # Password hashing utilities
-│   ├── services/                  # Business logic, reusable services
-│   │   ├── bookingService.js      # Handle seat reservations, seat availability checks
-│   │   └── userService.js         # User authentication/authorization services
-│   ├── app.js                     # Main Express application entry point
-│   ├── server.js                  # Server entry point (starts the backend server)
-│   └── .env                       # Environment variables```
+ backend/                       # Backend folder (Node.js, Sequelize, JWT, MySQL)
+├── config/                    # Configuration files (database, environment variables)
+│   └── db.js                  # Database connection configuration
+├── controllers/               # Controller logic (business logic for each API endpoint)
+│   ├── authController.js      # Signup, login, JWT token management
+│   ├── bookingController.js   # Manage bookings, seat selection, payments
+│   └── movieController.js     # CRUD operations for movies, admin routes
+├── models/                    # Sequelize models (database schemas)
+│   ├── User.js                # User model (admin, customers)
+│   ├── Movie.js               # Movie model
+│   ├── Booking.js             # Booking model
+│   └── Seat.js                # Seat model
+├── routes/                    # Routes for each API (maps HTTP methods to controller functions)
+│   ├── authRoutes.js          # Routes for user authentication (signup, login)
+│   ├── movieRoutes.js         # Routes for movie operations
+│   └── bookingRoutes.js       # Routes for seat booking operations
+├── middleware/                # Middleware (authentication, error handling)
+│   └── authMiddleware.js      # JWT authentication and authorization
+├── utils/                     # Helper utilities (e.g., JWT generation, password hashing)
+│   ├── jwt.js                 # JWT token generation/verification
+│   └── bcrypt.js              # Password hashing utilities
+├── services/                  # Business logic, reusable services
+│   ├── bookingService.js      # Handle seat reservations, seat availability checks
+│   └── userService.js         # User authentication/authorization services
+├── app.js                     # Main Express application entry point
+├── server.js                  # Server entry point (starts the backend server)
+└── .env                       # Environment variables```
 ```
 ## Installation
 
