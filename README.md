@@ -56,9 +56,14 @@ movie-ticket-booking-system/
 5. Seed the database.
    ```bash
    npx sequelize-cli db:seed:undo --seed 20240927160144-seed-movies
+   ```
+   ```bash
    npx sequelize-cli db:seed --seed 20240927161214-seed-showtimes
+   ```
+   ```bash
    npx sequelize-cli db:seed 20240927165034-seed-seats
    ```
+   
 6. Start the development server.
    ```bash
    npm run dev
