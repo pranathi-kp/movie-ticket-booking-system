@@ -20,7 +20,7 @@ This is the backend server for the Movie Ticket Booking System. It provides REST
 
 
 ```
- backend/                       # Backend folder (Node.js, Sequelize, JWT, MySQL)
+backend/                       # Backend folder (Node.js, Sequelize, JWT, MySQL)
 ├── config/                    # Configuration files (database, environment variables)
 │   └── db.js                  # Database connection configuration
 ├── controllers/               # Controller logic (business logic for each API endpoint)
