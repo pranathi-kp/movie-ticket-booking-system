@@ -32,7 +32,7 @@ This is a full-stack Movie Ticket Booking System that allows users to browse mov
 movie-ticket-booking-system/
 ├── backend/ # Backend code (API server)
 ├── frontend/ # Frontend code (React app)
-├── README.md # Main project README
+└── README.md # Main project README
 ```
 
 ## Installation
