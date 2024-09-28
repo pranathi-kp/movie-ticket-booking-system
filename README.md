@@ -84,6 +84,8 @@ movie-ticket-booking-system/
    ```
 4. Open your browser and navigate to http://localhost:3000.
 
+### Now sign up (role-based authentication) to use all functionalities of the application
+
 ## Usage
 - **Frontend**: The frontend provides a user interface for browsing movies, selecting seats, booking tickets, and viewing booking history.
 - **Backend**: The backend serves as the API server that handles requests from the frontend and communicates with the database.
