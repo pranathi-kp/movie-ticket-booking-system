@@ -47,7 +47,7 @@ This is the backend server for the Movie Ticket Booking System. It provides REST
 │   ├── app.js                     # Main Express application entry point
 │   ├── server.js                  # Server entry point (starts the backend server)
 │   └── .env                       # Environment variables```
-
+```
 ## Installation
 
 1. Clone the repository and navigate to the `backend` directory:
